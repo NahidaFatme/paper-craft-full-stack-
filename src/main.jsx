@@ -7,6 +7,8 @@ import './index.css'
 import AuthProvider from './Components/AuthProvider';
 import Login from './Components/Login';
 import Registration from './Components/Registration';
+import AddItem from './Components/AddItem';
+import AllItems from './Components/AllItems';
 import {
   createBrowserRouter, 
   RouterProvider, 
@@ -27,6 +29,13 @@ import {
     },
     { path: "/Registration",
       element: <Registration></Registration>
+    },
+    { path: "/AddItem",
+      element: <AddItem></AddItem>
+    },
+    { path: "/AllItems",
+      element: <AllItems></AllItems>,
+      loader: () => fetch('http://localhost:5000/items')
     },
   ]
   }, 

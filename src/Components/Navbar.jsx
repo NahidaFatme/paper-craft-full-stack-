@@ -40,8 +40,8 @@ const Navbar = () => {
                 <div className="navbar-center hidden lg:flex">
                     <ul className="flex justify-between text-white pacifico text-base gap-4">
                         <li className=" hover:text-yellow-500"><Link to="/">Home</Link></li>
-                        <li className=" hover:text-yellow-500"><Link to="/Contact">All Art & craft Items</Link></li>
-                        <li className=" hover:text-yellow-500"><Link to="/">Add Craft Item</Link></li>
+                        <li className=" hover:text-yellow-500"><Link to="/AllItems">All Art & craft Items</Link></li>
+                        <li className=" hover:text-yellow-500"><Link to="/AddItem">Add Craft Item</Link></li>
                         <li className=" hover:text-yellow-500"><Link to="/Contact">My Art&Craft List</Link></li>
                     </ul>
                 </div>
@@ -53,7 +53,7 @@ const Navbar = () => {
                                     <img src={user?.photoURL || "https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"} className="rounded-full" />
                                 </div>
                             </label>
-                            <ul tabIndex={0} className="dropdown-content z-[1] menu p-1 shadow bg-[#9797974e] text-[#fcbb02] rounded-lg w-24 ">
+                            <ul tabIndex={0} className="dropdown-content z-[1] menu p-1 shadow bg-[#6f6e6ebb] text-[#fcbb02] rounded-lg w-24 ">
                                 <li className="hover:text-white">
                                     <button onClick={handleLogout} className="">Logout</button>    
                                 </li>
