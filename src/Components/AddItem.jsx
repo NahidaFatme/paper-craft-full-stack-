@@ -70,19 +70,23 @@ const AddItem = () => {
                             </label>
                         </div>
                         <div className="form-control md:w-1/2 ml-4">
-                            <label className="label">
-                                <span className="label-text">Subcategory</span>
-                            </label>
-                            <label className="input-group">
-                                <input type="text" name="subcategory_Name" placeholder="subcategory" className="input input-bordered w-full" />
-                            </label>
+                            <label className="label">Subcategory</label>
+                            <select className="select select-bordered w-full" name="subcategory_Name">
+                                <option disabled selected>Select One</option>
+                                <option value="Card Making">Card Making</option>
+                                <option value="Scrapbooking">Scrapbooking</option>
+                                <option value="Paper Quilling & origami">Paper Quilling & origami</option>
+                                <option value="Glass Painting">Glass Painting</option>
+                                <option value="Lampworking">Lampworking</option>
+                                <option value="Glass Dying & Staining">Glass Dying & Staining</option>
+                            </select>
                         </div>
                     </div>
                     {/* row 2*/}
                     <div className="md:flex mb-8">
                         <div className="form-control md:w-1/2">
                             <label className="label">
-                                <span className="label-text">Price</span>
+                                <span className="label-text">Price: BDT</span>
                             </label>
                             <label className="input-group">
                                 <input type="number" name="price" placeholder="price" className="input input-bordered w-full" />
@@ -93,7 +97,7 @@ const AddItem = () => {
                                 <span className="label-text">Rating</span>
                             </label>
                             <label className="input-group">
-                                <input type="number" name="rating" placeholder="5.0" className="input input-bordered w-full" />
+                                <input type="number" name="rating" min="0" max="5" step="0.1" placeholder="5.0" className="input input-bordered w-full" />
                             </label>
                         </div>
                         <div className="form-control md:w-1/2 ml-4">

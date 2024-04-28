@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useLoaderData } from "react-router-dom";
 import { TbListDetails } from "react-icons/tb";
+import { Link } from "react-router-dom";
 const AllItems = () => {
 
     const loadedItems = useLoaderData();
@@ -34,7 +35,9 @@ const AllItems = () => {
                                                     <td>{item.subcategory_Name}</td>
                                                     <td>{item.price}</td>
                                                     <td>{item.stockStatus}</td>
+                                                    <Link to={`/Details/${item._id}`}>
                                                     <td><button className="btn bg-transparent text-[#d4807d] border-none text-base font-semibold hover:bg-[#9797974e]"> <TbListDetails /> View Details</button></td>
+                                                    </Link>
                                                 </tr> )
                         }
                         </tbody>

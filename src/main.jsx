@@ -9,6 +9,7 @@ import Login from './Components/Login';
 import Registration from './Components/Registration';
 import AddItem from './Components/AddItem';
 import AllItems from './Components/AllItems';
+import Details from './Components/Details';
 import {
   createBrowserRouter, 
   RouterProvider, 
@@ -36,6 +37,10 @@ import {
     { path: "/AllItems",
       element: <AllItems></AllItems>,
       loader: () => fetch('http://localhost:5000/items')
+    },
+    { path: "/Details/:id",
+      element: <Details></Details>,
+      loader: ({params}) => fetch(`http://localhost:5000/items/${params.id}`)
     },
   ]
   }, 
