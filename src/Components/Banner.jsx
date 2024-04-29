@@ -19,9 +19,10 @@ const Banner = () => {
     
     return (
         <div>
+            
             <div className="pacifico w-8/12 mx-auto">
                 <div className="text-center mb-10">
-                    <h1 className="mx-auto pacifico text-[#02413c] text-3xl font-bold animate__animated animate__backInRight">Our Categories</h1>
+                    <h1 className="mx-auto pacifico text-3xl font-bold animate__animated animate__backInRight">Our Categories</h1>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
                     {

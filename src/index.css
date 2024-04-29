@@ -13,6 +13,15 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+body.light {
+  background-color: #ffffff;
+  color: #02413c;
+}
+
+body.dark {
+  background-color: #02413c;
+  color: #fcbb02;
+}
 .pacifico {
   font-family: "Pacifico", cursive;
   font-style: normal;
