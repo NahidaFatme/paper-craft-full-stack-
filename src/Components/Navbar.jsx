@@ -32,7 +32,7 @@ const Navbar = () => {
                             <li className=" hover:text-yellow-500"><Link to="/">Home</Link></li>
                             <li className=" hover:text-yellow-500"><Link to="/AllItems">All Items</Link></li>
                             <li className=" hover:text-yellow-500"><Link to="/AddItem">Add Item</Link></li>
-                            <li className=" hover:text-yellow-500"><Link to={`/MyList/${user.email}`}>My List</Link></li>
+                            <li className=" hover:text-yellow-500"><Link to={`/MyList/${user?.email}`}>My List</Link></li>
                         </ul>
                     </div>
                     <div className="">
@@ -44,7 +44,7 @@ const Navbar = () => {
                         <li className=" hover:text-yellow-500"><Link to="/">Home</Link></li>
                         <li className=" hover:text-yellow-500"><Link to="/AllItems">All Items</Link></li>
                         <li className=" hover:text-yellow-500"><Link to="/AddItem">Add Item</Link></li>
-                        <li className=" hover:text-yellow-500"><Link to={`/MyList/${user.email}`}>My List</Link></li>
+                        <li className=" hover:text-yellow-500"><Link to={`/MyList/${user?.email}`}>My List</Link></li>
                     </ul>
                 </div>
                 <div className="navbar-end pacifico">

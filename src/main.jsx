@@ -12,6 +12,7 @@ import AllItems from './Components/AllItems';
 import Details from './Components/Details';
 import MyList from './Components/MyList';
 import UpdateItem from './Components/UpdateItem';
+import PrivateRoute from './Components/PrivateRoute';
 import {
   createBrowserRouter, 
   RouterProvider, 
@@ -34,22 +35,22 @@ import {
       element: <Registration></Registration>
     },
     { path: "/AddItem",
-      element: <AddItem></AddItem>
+      element: <PrivateRoute><AddItem></AddItem></PrivateRoute>
     },
     { path: "/AllItems",
       element: <AllItems></AllItems>,
       loader: () => fetch('http://localhost:5000/items')
     },
     { path: "/Details/:id",
-      element: <Details></Details>,
+      element: <PrivateRoute><Details></Details></PrivateRoute>,
       loader: ({params}) => fetch(`http://localhost:5000/items/id/${params.id}`)
     },
     { path: "/MyList/:email",
-      element: <MyList></MyList>,
+      element: <PrivateRoute><MyList></MyList></PrivateRoute>,
       loader: ({params}) => fetch(`http://localhost:5000/items/email/${params.email}`)
     },
     { path: "/Update/:id",
-      element: <UpdateItem></UpdateItem>,
+      element: <PrivateRoute><UpdateItem></UpdateItem></PrivateRoute>,
       loader: ({params}) => fetch(`http://localhost:5000/items/id/${params.id}`)
     },
   ]

@@ -41,6 +41,7 @@ const Login = () => {
         loginGoogle(provider)
         .then(result => {
             const user = result.user;
+            navigate(location?.state ? location.state : './')
             toast.success("Signed in with Google");
             
         })
@@ -54,6 +55,7 @@ const Login = () => {
         loginGithub(Gitprovider)
         .then(result => {
             const user = result.user;
+            navigate(location?.state ? location.state : './')
             toast.success("Signed in with Github");
         })
         .catch(error => {
