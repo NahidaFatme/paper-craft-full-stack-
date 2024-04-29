@@ -6,6 +6,7 @@ import { FaStar } from "react-icons/fa";
 import { FiEdit } from "react-icons/fi";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import Swal from "sweetalert2";
+import { FaArrowDown } from "react-icons/fa";
 const MyList = () => {
 
     const loadedItems = useLoaderData();
@@ -48,10 +49,35 @@ const MyList = () => {
             }
         })
     };
+
+    const handleCustom = custom => {
+        let filteredItems;
+        if (custom === 'yes') {
+            filteredItems = loadedItems.filter(item => item.customization === 'yes');
+        } else if (custom === 'no') {
+            filteredItems = loadedItems.filter(item => item.customization === 'no');
+        } else if (custom === 'reset'){
+            filteredItems = loadedItems; 
+        }
+        setItems(filteredItems);
+    };
+
     return (
         <div className="bg-[#02413c] pt-12">
             <div className="text-center mb-10">
                     <h1 className="mx-auto pacifico text-[#fcbb02] text-4xl font-bold animate__animated animate__backInRight">My Art & Craft List</h1>
+            </div>
+            {/* filter */}
+            <div className="flex ml-44 mb-6 pacifico">
+                <label className="label border-2 p-2 border-[#fcbb02] bg-transparent border-r-0 text-[#fcbb02] rounded-l-lg">Filter</label>
+                <div className="dropdown">
+                    <div tabIndex={0} role="button" className="flex items-center gap-2 border-2 p-2 border-white bg-transparent  text-white rounded-r-lg">Customizable <FaArrowDown /></div>
+                    <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-lg w-32">
+                        <li onClick={() => handleCustom('reset')} className="hover:bg-[#fcbb02] rounded-md">Reset</li>
+                        <li onClick={() => handleCustom('yes')} className="hover:bg-[#fcbb02] rounded-md">Yes</li>
+                        <li onClick={() => handleCustom('no')} className="hover:bg-[#fcbb02] rounded-md">No</li>
+                    </ul>
+                </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-16 w-4/5 mx-auto">
                 {
