@@ -13,6 +13,8 @@ import Details from './Components/Details';
 import MyList from './Components/MyList';
 import UpdateItem from './Components/UpdateItem';
 import PrivateRoute from './Components/PrivateRoute';
+import Banner from './Components/Banner';
+import SelectedCategory from './Components/SelectedCategory';
 import {
   createBrowserRouter, 
   RouterProvider, 
@@ -53,6 +55,11 @@ import {
       element: <PrivateRoute><UpdateItem></UpdateItem></PrivateRoute>,
       loader: ({params}) => fetch(`http://localhost:5000/items/id/${params.id}`)
     },
+    { path: "/SelectedCategory/:name",
+      element: <SelectedCategory></SelectedCategory>,
+      loader: ({params}) => fetch(`http://localhost:5000/items/category/${params.name}`)
+    },
+    
   ]
   }, 
  ]); 

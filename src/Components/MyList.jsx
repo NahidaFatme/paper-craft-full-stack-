@@ -81,7 +81,7 @@ const MyList = () => {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-16 w-4/5 mx-auto">
                 {
-                    items.map(loadedItem => <div className="grid grid-cols-2">
+                    items.map(loadedItem => <div>
                             <div className="card w-96 glass">
                             <figure><img src={loadedItem.photo} alt="car!"/></figure>
                             <div className="card-body w-full pacifico">
