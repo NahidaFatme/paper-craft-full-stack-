@@ -10,6 +10,8 @@ import Registration from './Components/Registration';
 import AddItem from './Components/AddItem';
 import AllItems from './Components/AllItems';
 import Details from './Components/Details';
+import MyList from './Components/MyList';
+import UpdateItem from './Components/UpdateItem';
 import {
   createBrowserRouter, 
   RouterProvider, 
@@ -40,7 +42,15 @@ import {
     },
     { path: "/Details/:id",
       element: <Details></Details>,
-      loader: ({params}) => fetch(`http://localhost:5000/items/${params.id}`)
+      loader: ({params}) => fetch(`http://localhost:5000/items/id/${params.id}`)
+    },
+    { path: "/MyList/:email",
+      element: <MyList></MyList>,
+      loader: ({params}) => fetch(`http://localhost:5000/items/email/${params.email}`)
+    },
+    { path: "/Update/:id",
+      element: <UpdateItem></UpdateItem>,
+      loader: ({params}) => fetch(`http://localhost:5000/items/id/${params.id}`)
     },
   ]
   }, 
