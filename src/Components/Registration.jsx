@@ -68,7 +68,7 @@ const Registration = () => {
                         <h1 className="text-[#fcbb02] text-base md:text-base lg:text-base font-bold animate__animated animate__backInRight">Create a new account and hop in board !
                         </h1>
                     </div>
-                    <div className="card shrink-0 w-[60%] h-full bg-[#fff8e3] shadow-2xl animate__animated animate__backInUp">
+                    <div className="card shrink-0 w-11/12 md:w-[60%] h-full bg-[#fff8e3] shadow-2xl animate__animated animate__backInUp">
                     <form onSubmit={handleRegistration} className="card-body">
                         <div className="form-control">
                         <label className="label">
@@ -97,8 +97,8 @@ const Registration = () => {
                             type={showpassword ? "text" : "password"} 
                             name="password" 
                             placeholder="password" 
-                            className="input input-bordered grow" required />
-                        <span onClick={ () => setShowPassword(!showpassword)} className="absolute right-4 text-2xl top-3">
+                            className="input input-bordered md:grow" required />
+                        <span onClick={ () => setShowPassword(!showpassword)} className="absolute right-0 md:right-4 text-2xl top-3">
                             {
                                 showpassword ? <FaEyeSlash /> : <FaEye />
                             }

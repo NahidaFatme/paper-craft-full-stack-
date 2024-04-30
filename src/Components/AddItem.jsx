@@ -58,11 +58,11 @@ const AddItem = () => {
                 <h1 className="mx-auto pacifico text-[#fcbb02] text-4xl font-bold animate__animated animate__backInRight">Add New Craft Item</h1>
             </div>
             {/* form start */}
-            <div className="bg-[#fff8e3] p-20 w-2/3 mx-auto rounded-2xl">
+            <div className="bg-[#fff8e3] p-5 md:p-20 w-4/5 md:w-2/3 mx-auto rounded-2xl">
                 <form onSubmit={handleAddItem} className="pacifico text-[#02413c]">
                     {/*  row 1*/}
-                    <div className="md:flex mb-8">
-                        <div className="form-control md:w-1/2">
+                    <div className="flex flex-col md:flex-row mb-8">
+                        <div className="form-control w-full md:w-1/2">
                             <label className="label">
                                 <span className="label-text">Item Name</span>
                             </label>
@@ -70,7 +70,7 @@ const AddItem = () => {
                                 <input type="text" name="item_name" placeholder="Name" className="input input-bordered w-full" />
                             </label>
                         </div>
-                        <div className="form-control md:w-1/2 ml-4">
+                        <div className="form-control md:w-1/2 ml-0 md:ml-4">
                             <label className="label">Subcategory</label>
                             <select className="select select-bordered w-full" name="subcategory_Name">
                                 <option disabled selected>Select One</option>
@@ -93,7 +93,7 @@ const AddItem = () => {
                                 <input type="number" name="price" placeholder="price" className="input input-bordered w-full" />
                             </label>
                         </div>
-                        <div className="form-control md:w-1/2 ml-4">
+                        <div className="form-control md:w-1/2 ml-0 md:ml-4">
                             <label className="label">
                                 <span className="label-text">Rating</span>
                             </label>
@@ -101,7 +101,7 @@ const AddItem = () => {
                                 <input type="number" name="rating" min="0" max="5" step="0.1" placeholder="5.0" className="input input-bordered w-full" />
                             </label>
                         </div>
-                        <div className="form-control md:w-1/2 ml-4">
+                        <div className="form-control md:w-1/2 ml-0 md:ml-4">
                             <label className="label">
                                 <span className="label-text">Customization-</span>
                             </label>
@@ -137,7 +137,7 @@ const AddItem = () => {
                                 <input type="text" name="processing_time" placeholder="2 Working Days" className="input input-bordered w-full" />
                             </label>
                         </div>
-                        <div className="form-control md:w-1/2 ml-4">
+                        <div className="form-control md:w-1/2 ml-0 md:ml-4">
                             <label className="label">Select a stock Status </label>
                             <select className="select select-bordered w-full" name="stockStatus">
                                 <option disabled selected>Stock Status</option>
@@ -157,7 +157,7 @@ const AddItem = () => {
                             </label>
                         </div>
                         
-                        <div className="form-control md:w-1/2 ml-4">
+                        <div className="form-control md:w-1/2 ml-0 md:ml-4">
                             <label className="label">
                                 <span className="label-text">User Email</span>
                             </label>

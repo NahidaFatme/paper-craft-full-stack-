@@ -82,7 +82,7 @@ const Login = () => {
                         </Link>
                         </h1>
                     </div>
-                    <div className="card shrink-0 w-[60%] h-full shadow-2xl bg-[#fff8e3] animate__animated animate__backInUp">
+                    <div className="card shrink-0 w-4/5 md:w-[60%] h-full shadow-2xl bg-[#fff8e3] animate__animated animate__backInUp">
                     <form onSubmit={handleLogin} className="card-body">
                         <div className="form-control">
                         <label className="label">

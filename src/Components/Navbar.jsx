@@ -23,11 +23,11 @@ const Navbar = () => {
     };
 
     return (
-        <div className="bg">
-            <div className="navbar px-4 md:px-12 lg:px-24 py-4">
+        <div className="bg w-full">
+            <div className="navbar px-1 md:px-12 lg:px-24 py-4">
                 <div className="navbar-start">
                     <div className="dropdown">
-                        <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+                        <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden text-white">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                         </div>
                         <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2  rounded-box w-40 bg-zinc-100">
@@ -38,8 +38,8 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className="">
-                        <a className="pacifico flex justify-center items-center gap-2 text-base lg:text-2xl font-extrabold text-white">
-                            <span><IoIosPaperPlane /></span>
+                        <a className="pacifico flex justify-center items-center gap-2 text-sm md:text-base lg:text-2xl font-extrabold text-white">
+                            <span className="hidden md:block"><IoIosPaperPlane /></span>
                             Paper Craft
                         </a>
                     </div>
@@ -52,9 +52,9 @@ const Navbar = () => {
                         <li className=" hover:text-yellow-500"><Link to={`/MyList/${user?.email}`}>My List</Link></li>
                     </ul>
                 </div>
-                <div className="navbar-end pacifico">
-                    <div className="text-white mr-10">
-                    <DarkMode></DarkMode>
+                <div className="flex flex-col md:flex-row gap-2 navbar-end pacifico">
+                    <div className="text-white mr-0 md:mr-10">
+                        <DarkMode></DarkMode>
                     </div>
                     {
                         user ? <div className="dropdown dropdown-hover">
@@ -70,7 +70,7 @@ const Navbar = () => {
                             </ul>
                         </div>
                         :
-                        <div className="flex gap-4">
+                        <div className="flex flex-col md:flex-row gap-4">
                             <Link to="/Login" className="flex flex-col lg:flex-row gap-2 lg:gap-0" >
                             <a className="btn bg-transparent text-[#fcbb02] border-3 border-[#fcbb02] text-base lg:text-base font-semibold hover:bg-[#9797974e]"> Login</a>
                             </Link>

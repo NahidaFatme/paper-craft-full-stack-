@@ -52,7 +52,7 @@ const UpdateItem = () => {
                 <h1 className="mx-auto pacifico text-[#fcbb02] text-4xl font-bold animate__animated animate__backInRight">Update Art & Craft Item</h1>
             </div>
             {/* form start */}
-            <div className="bg-[#fff8e3] p-20 w-2/3 mx-auto rounded-2xl">
+            <div className="bg-[#fff8e3] p-4 md:p-20 w-4/5 md:w-2/3 mx-auto rounded-2xl">
                 <form onSubmit={handleUpdate} className="pacifico text-[#02413c]">
                     {/*  row 1*/}
                     <div className="md:flex mb-8">
@@ -64,7 +64,7 @@ const UpdateItem = () => {
                                 <input type="text" name="item_name" defaultValue={loadedItem.item_name} placeholder="Name" className="input input-bordered w-full" />
                             </label>
                         </div>
-                        <div className="form-control md:w-1/2 ml-4">
+                        <div className="form-control md:w-1/2 ml-0 md:ml-4">
                             <label className="label">Subcategory</label>
                             <select className="select select-bordered w-full" defaultValue={loadedItem.subcategory_Name} name="subcategory_Name">
                                 <option disabled selected>Select One</option>
@@ -87,7 +87,7 @@ const UpdateItem = () => {
                                 <input type="number" name="price"defaultValue={loadedItem.price} placeholder="price" className="input input-bordered w-full" />
                             </label>
                         </div>
-                        <div className="form-control md:w-1/2 ml-4">
+                        <div className="form-control md:w-1/2 ml-0 md:ml-4">
                             <label className="label">
                                 <span className="label-text">Rating</span>
                             </label>
@@ -95,7 +95,7 @@ const UpdateItem = () => {
                                 <input type="number" name="rating" min="0" max="5" step="0.1" defaultValue={loadedItem.rating} placeholder="5.0" className="input input-bordered w-full" />
                             </label>
                         </div>
-                        <div className="form-control md:w-1/2 ml-4">
+                        <div className="form-control md:w-1/2 ml-0 md:ml-4">
                             <label className="label">
                                 <span className="label-text">Customization</span>
                             </label>
@@ -132,7 +132,7 @@ const UpdateItem = () => {
                                 <input type="text" name="processing_time" defaultValue={loadedItem.processing_time} placeholder="2 Working Days" className="input input-bordered w-full" />
                             </label>
                         </div>
-                        <div className="form-control md:w-1/2 ml-4">
+                        <div className="form-control md:w-1/2 ml-0 md:ml-4">
                             <label className="label">Select a stock Status </label>
                             <select className="select select-bordered w-full" name="stockStatus" defaultValue={loadedItem.stockStatus}>
                                 <option disabled selected>Stock Status</option>

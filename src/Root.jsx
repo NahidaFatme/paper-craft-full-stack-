@@ -6,7 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Footer from "./Components/Footer";
 const Root = () => {
     return (
-        <div className="">
+        <div className="w-full">
             <Navbar></Navbar>
             <Outlet></Outlet>
             <Footer></Footer>

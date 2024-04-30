@@ -8,7 +8,7 @@ import Grass from '../assets/Grass.json';
 const Footer = () => {
     return (
         <div className="bg">
-            <div className="mt-16 md:mt-24 lg:mt-0">
+            <div className="">
                     <Lottie animationData={Grass} />
             </div>
             <div className="relative pacifico bg-[#02413c] glass text-white">
