@@ -31,7 +31,7 @@ const MyList = () => {
             if (result.isConfirmed) {
 
 
-                fetch(`http://localhost:5000/items/delete/${_id}`, {
+                fetch(`https://paper-craft-server.vercel.app/items/delete/${_id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())

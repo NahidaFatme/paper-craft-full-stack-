@@ -29,7 +29,7 @@ const UpdateItem = () => {
         const updatedItem = { item_name, subcategory_Name, price, rating, customization, description, processing_time, stockStatus, photo}
 
         
-        fetch(`http://localhost:5000/items/update/${_id}`, {
+        fetch(`https://paper-craft-server.vercel.app/items/update/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

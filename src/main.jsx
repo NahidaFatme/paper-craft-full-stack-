@@ -41,23 +41,23 @@ import {
     },
     { path: "/AllItems",
       element: <AllItems></AllItems>,
-      loader: () => fetch('http://localhost:5000/items')
+      loader: () => fetch('https://paper-craft-server.vercel.app/items')
     },
     { path: "/Details/:id",
       element: <PrivateRoute><Details></Details></PrivateRoute>,
-      loader: ({params}) => fetch(`http://localhost:5000/items/id/${params.id}`)
+      loader: ({params}) => fetch(`https://paper-craft-server.vercel.app/items/id/${params.id}`)
     },
     { path: "/MyList/:email",
       element: <PrivateRoute><MyList></MyList></PrivateRoute>,
-      loader: ({params}) => fetch(`http://localhost:5000/items/email/${params.email}`)
+      loader: ({params}) => fetch(`https://paper-craft-server.vercel.app/items/email/${params.email}`)
     },
     { path: "/Update/:id",
       element: <PrivateRoute><UpdateItem></UpdateItem></PrivateRoute>,
-      loader: ({params}) => fetch(`http://localhost:5000/items/id/${params.id}`)
+      loader: ({params}) => fetch(`https://paper-craft-server.vercel.app/items/id/${params.id}`)
     },
     { path: "/SelectedCategory/:name",
       element: <SelectedCategory></SelectedCategory>,
-      loader: ({params}) => fetch(`http://localhost:5000/items/category/${params.name}`)
+      loader: ({params}) => fetch(`https://paper-craft-server.vercel.app/items/category/${params.name}`)
     },
     
   ]

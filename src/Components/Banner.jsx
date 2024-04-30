@@ -22,7 +22,7 @@ const Banner = () => {
     const [subs, setSubs] = useState([]);
     const [loadedItems, setLoadedItems] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/subcategory')
+        fetch('https://paper-craft-server.vercel.app/subcategory')
             .then(res => res.json())
             .then(data => {
                 console.log("Fetched data:", data); 
@@ -32,7 +32,7 @@ const Banner = () => {
                 console.error('Error fetching data:', error);
             });
 
-            fetch('http://localhost:5000/items')
+            fetch('https://paper-craft-server.vercel.app/items')
             .then(res => res.json())
             .then(data => {
                 console.log("Fetched data:", data); 
