@@ -1,9 +1,10 @@
 import { useContext, useState } from "react";
 import { AuthContext } from "./AuthProvider";
 import { Link, NavLink } from "react-router-dom";
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import DarkMode from "./DarkMode";
+import { IoIosPaperPlane } from "react-icons/io";
 import '../index.css';
 const Navbar = () => {
 
@@ -37,7 +38,10 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className="">
-                        <a className="pacifico text-base lg:text-2xl font-extrabold text-white">Paper Craft</a>
+                        <a className="pacifico flex justify-center items-center gap-2 text-base lg:text-2xl font-extrabold text-white">
+                            <span><IoIosPaperPlane /></span>
+                            Paper Craft
+                        </a>
                     </div>
                 </div>
                 <div className="navbar-center hidden lg:flex">
