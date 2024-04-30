@@ -35,7 +35,8 @@ const Banner = () => {
             .then(res => res.json())
             .then(data => {
                 console.log("Fetched data:", data); 
-                setLoadedItems(data);
+                const firstSixItems = data.slice(0, 6);
+                setLoadedItems(firstSixItems);
             })
             .catch(error => {
                 console.error('Error fetching data:', error);
