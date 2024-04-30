@@ -8,6 +8,12 @@ import { FaRegEdit } from "react-icons/fa";
 import { TbCategory } from "react-icons/tb";
 import { TbCurrencyTaka } from "react-icons/tb";
 import { TbListDetails } from "react-icons/tb";
+import { FaArrowAltCircleRight } from "react-icons/fa";
+import { FaUserClock } from "react-icons/fa";
+import { GiFamilyHouse } from "react-icons/gi";
+import { MdConnectWithoutContact } from "react-icons/md";
+import 'animate.css';
+import Slide from "./Slide";
 const Banner = () => {
     const [subs, setSubs] = useState([]);
     const [loadedItems, setLoadedItems] = useState([]);
@@ -35,41 +41,7 @@ const Banner = () => {
     
     return (
         <div>
-            <section>
-                <div className="carousel w-full">
-                    <div id="slide1" className="carousel-item relative w-full">
-                        <img src="https://daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg" className="w-full" />
-                        <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide4" className="btn btn-circle">❮</a> 
-                        <a href="#slide2" className="btn btn-circle">❯</a>
-                        </div>
-                        <div className="absolute z-10 top-0">
-                            <p>this is text</p>
-                        </div>
-                    </div> 
-                    <div id="slide2" className="carousel-item relative w-full">
-                        <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" className="w-full" />
-                        <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide1" className="btn btn-circle">❮</a> 
-                        <a href="#slide3" className="btn btn-circle">❯</a>
-                        </div>
-                    </div> 
-                    <div id="slide3" className="carousel-item relative w-full">
-                        <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" className="w-full" />
-                        <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide2" className="btn btn-circle">❮</a> 
-                        <a href="#slide4" className="btn btn-circle">❯</a>
-                        </div>
-                    </div> 
-                    <div id="slide4" className="carousel-item relative w-full">
-                        <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" className="w-full" />
-                        <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide3" className="btn btn-circle">❮</a> 
-                        <a href="#slide1" className="btn btn-circle">❯</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <Slide></Slide>
             <section>
                 <div className="text-center mb-10">
                     <h1 className="mx-auto pacifico text-3xl font-bold animate__animated animate__backInRight">
@@ -108,7 +80,38 @@ const Banner = () => {
                     }
                 </div>
             </section>
-            <section className="py-14">
+            <section className="mt-24">
+                <div className="text-center mb-10">
+                    <h1 className="mx-auto pacifico text-3xl font-bold animate__animated animate__backInRight">
+                        Our Services </h1>
+                </div>
+                <div>
+                    <div className='animate__animated animate__backInLeft animate__delay-1s flex flex-col  md:flex-row lg:flex-row gap-16 text-3xl font-semibold text-[#0f413dd7] justify-center md:mt-14 mt-56'>
+                    <div className='p-6 w-72 glass bg-[#fcbb02] rounded-lg flex justify-center items-center gap-3'>
+                        <MdConnectWithoutContact  className='text-5xl'/>
+                        <div>
+                            <p className='text-left'>800+ </p>
+                            <p className='text-base text-white'>Clients Served</p>
+                        </div>
+                    </div>
+                    <div className='p-6 w-72 glass bg-[#fcbb02] rounded-lg flex justify-center items-center gap-3'>
+                        <GiFamilyHouse className='text-5xl' />
+                        <div>
+                            <p className='text-left '>2000+</p>
+                            <p className='text-base  text-white'>Art & Craft Items</p>
+                        </div>
+                    </div>
+                    <div className='p-6 w-72 glass bg-[#fcbb02] rounded-lg flex justify-center items-center gap-3'>
+                        <FaUserClock className='text-5xl' />
+                        <div>
+                            <p className='text-left '>5 Day </p>
+                            <p className='text-base  text-white'> Delivery Servce</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+            <section className="py-24">
                 <div className=" pacifico w-8/12 mx-auto">
                     <div className="text-center mb-10">
                         <h1 className="mx-auto pacifico text-3xl font-bold animate__animated animate__backInRight">Our Categories</h1>
