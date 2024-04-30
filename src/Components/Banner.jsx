@@ -14,6 +14,9 @@ import { GiFamilyHouse } from "react-icons/gi";
 import { MdConnectWithoutContact } from "react-icons/md";
 import 'animate.css';
 import Slide from "./Slide";
+import p1 from '../images/p1.jpg';
+import p2 from '../images/p2.jpg';
+import p3 from '../images/p3.jpg';
 const Banner = () => {
     const [subs, setSubs] = useState([]);
     const [loadedItems, setLoadedItems] = useState([]);
@@ -125,6 +128,51 @@ const Banner = () => {
                                 </div>
                             </Link> ) 
                         }
+                    </div>
+                </div>
+            </section>
+            <section className="my-24">
+                <div className="text-center mb-10">
+                    <h1 className="mx-auto pacifico text-3xl font-bold animate__animated animate__backInRight">
+                        Meet the Makers !!
+                     </h1>
+                </div>
+                <div className="w-4/5 mx-auto">
+                    {/* person 1 */}
+                    <div className="flex  justify-center items-center gap-12 pacifico">
+                        <div className="relative w-1/2">
+                            <img src={p1} className="bg-red-200 p-6 w-96 h-[600px]" />
+                            <div className="absolute -bottom-10 left-10 z-10 w-96 h-[600px] border-2 border-red-200"></div>
+                        </div>
+                        <div className="w-1/2">
+                            <h2 className="text-5xl font-bold pb-7">Benjamin Craftwell</h2>
+                            <p className="text-2xl font- pb-12">Scrapbook Maker</p>
+                            <p className="text-justify text-xl">Hi, I'm Benjamin Craftwell, a passionate scrapbook artist. With delicate hands and a creative mind, I transform memories into timeless treasures. Each page tells a story, blending colors, textures, and photos into captivating tales. Let me craft your memories into beautiful keepsakes to cherish forever.</p>
+                        </div>
+                    </div>
+                    {/* person 2 */}
+                    <div className="flex flex-row-reverse justify-center items-center gap-28 pacifico">
+                        <div className="relative w-1/2">
+                            <img src={p2} className="bg-red-200 p-6 w-96 h-[600px]" />
+                            <div className="absolute -bottom-10 left-10 z-10 w-96 h-[600px] border-2 border-red-200"></div>
+                        </div>
+                        <div className="w-1/2">
+                            <h2 className="text-5xl font-bold pb-7">Emily Glassart</h2>
+                            <p className="text-2xl font- pb-12">Origami & craft painter</p>
+                            <p className="text-justify text-xl">Hello, I'm Emily Glassart, a dedicated glass painter. With every stroke of my brush, I bring ordinary glass to life, infusing it with vibrant colors and intricate designs. From elegant vases to stunning stained glass windows, let me illuminate your world with the magic of glass art that adds a touch of elegance and brilliance to any space.</p>
+                        </div>
+                    </div>
+                    {/* person 3 */}
+                    <div className="flex  justify-center items-center gap-12 pacifico">
+                        <div className="relative w-1/2">
+                            <img src={p3} className="bg-red-200 p-6 w-96 h-[600px]" />
+                            <div className="absolute -bottom-10 left-10 z-10 w-96 h-[600px] border-2 border-red-200"></div>
+                        </div>
+                        <div className="w-1/2">
+                            <h2 className="text-5xl font-bold pb-7">Olivia Origami</h2>
+                            <p className="text-2xl font- pb-12">Glass Staining & Painter</p>
+                            <p className="text-justify text-xl">Greetings! I'm Olivia Origami, an avid lover of paper and the art of origami. With nimble fingers and a passion for creativity, I fold and shape paper into intricate masterpieces that captivate the eye and inspire wonder. From graceful cranes to intricate flowers, let me bring the beauty of origami into your life with my delicate craftsmanship and attention to detail.</p>
+                        </div>
                     </div>
                 </div>
             </section>

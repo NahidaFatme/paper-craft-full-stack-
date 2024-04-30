@@ -16,14 +16,13 @@ const SelectedCategory = () => {
     const loadedItems = useLoaderData();
     return (
         <div className="bg-[#02413c] h-svh pt-12">
+            <div className="text-center mb-10">
+                <h1 className="mx-auto pacifico text-[#fcbb02] text-3xl font-bold animate__animated animate__backInRight">
+                 Showing Items of Selected Category</h1>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-16 w-4/5 mx-auto">
                 {
-                    loadedItems.map(loadedItem => <div>
-                        <div className="text-center mb-10">
-                            <h1 className="mx-auto pacifico text-[#fcbb02] text-3xl font-bold animate__animated animate__backInRight">
-                                <span className="text-white">Showing Items of </span> 
-                                {loadedItem.subcategory_Name}</h1>
-                        </div>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-16 w-4/5 mx-auto">
+                    loadedItems.map(loadedItem => <div> 
                         <div className="card w-72 glass">
                                 <figure><img src={loadedItem.photo} alt="car!"/></figure>
                             <div className="card-body w-full pacifico">
@@ -51,8 +50,9 @@ const SelectedCategory = () => {
                             </div>
                             </div>
                         </div>
-                    </div>)
+                    )
                 }
+            </div>
         </div>
     );
 };
