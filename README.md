@@ -5,6 +5,8 @@ paper craft store, offering a diverse range of art and craft items for all your 
 - [Paper Craft Website Link](https://paper-craft-d0a6e.web.app/)
 - [https://paper-craft-d0a6e.web.app/](https://paper-craft-d0a6e.web.app/)
 - [ServerSide Link](https://paper-craft-server.vercel.app/)
+
+
 B9 A10 Type-02 Requirements
 
 Selected Category: Paper Crafts & Glass Art
