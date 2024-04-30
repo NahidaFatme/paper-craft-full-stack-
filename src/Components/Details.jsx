@@ -23,10 +23,10 @@ const Details = () => {
                         <p className="text-[#5b9004] text-lg md:text-4xl font-bold">{loadedItem.item_name}</p>
                         <p className="text-[#02413c] text-base font-bold">Category: {loadedItem.subcategory_Name}</p>
                         <hr className="border-1 border-[#5b9004]"/>
-                        <div className="fle flex-col md:flex-row  md:justify-between">
+                        <div className="flex flex-col md:flex-row justify-between">
                             <p className="rounded-lg mb-3 md:mb-0 py-3 px-6 bg-[#5b9004] text-[#fcbb02] flex gap-2 justify-center items-center"><IoMdPricetags/>Price: {loadedItem.price} BDT</p>
                             <p className="rounded-lg mb-3 md:mb-0 py-3 px-6 bg-[#5b9004] text-[#fcbb02] flex gap-2 justify-center items-center">Rating: {loadedItem.rating} <FaStar /></p>
-                            <p className="rounded-lg  mb-3 md:mb-0 py-3 px-6 bg-[#5b9004] text-[#fcbb02] flex gap-2 justify-center items-center"><MdOutlineDashboardCustomize /> Customizable: {loadedItem.customization}</p>
+                            <p className="rounded-lg mb-3 md:mb-0 py-3 px-6 bg-[#5b9004] text-[#fcbb02] flex gap-2 justify-center items-center"><MdOutlineDashboardCustomize /> Customizable: {loadedItem.customization}</p>
                         </div>
                         <div className="">
                             <p className="text-[#02413c] text-lg font-bold mb-4 flex gap-2 items-center"><FaRegClock /> {loadedItem.processing_time } <span>working days</span></p>
