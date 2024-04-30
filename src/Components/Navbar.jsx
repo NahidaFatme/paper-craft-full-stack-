@@ -23,7 +23,7 @@ const Navbar = () => {
     };
 
     return (
-        <div className="bg-[#02413c]">
+        <div className="bg">
             <div className="navbar px-4 md:px-12 lg:px-24 py-4">
                 <div className="navbar-start">
                     <div className="dropdown">

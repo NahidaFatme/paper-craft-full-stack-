@@ -7,6 +7,7 @@ import { FiEdit } from "react-icons/fi";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import Swal from "sweetalert2";
 import { FaArrowDown } from "react-icons/fa";
+import '../index.css';
 const MyList = () => {
 
     const loadedItems = useLoaderData();
@@ -63,7 +64,7 @@ const MyList = () => {
     };
 
     return (
-        <div className="bg-[#02413c] pt-12">
+        <div className="bg pt-12">
             <div className="text-center mb-10">
                     <h1 className="mx-auto pacifico text-[#fcbb02] text-4xl font-bold animate__animated animate__backInRight">My Art & Craft List</h1>
             </div>

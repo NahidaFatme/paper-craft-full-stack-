@@ -47,7 +47,7 @@ const UpdateItem = () => {
 
     }
     return (
-        <div className="mx-auto bg-[#02413c] py-6 md:py-16">
+        <div className="mx-auto bg py-6 md:py-16">
             <div className="text-center mb-10">
                 <h1 className="mx-auto pacifico text-[#fcbb02] text-4xl font-bold animate__animated animate__backInRight">Update Art & Craft Item</h1>
             </div>

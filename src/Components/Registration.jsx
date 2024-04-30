@@ -6,6 +6,7 @@ import { FaEyeSlash } from "react-icons/fa6";
 import { FaEye } from "react-icons/fa";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import '../index.css';
 const Registration = () => {
     const { createUser, updateUserProfile, loading, setUser } = useContext(AuthContext);
     if (loading) {
@@ -58,7 +59,7 @@ const Registration = () => {
         document.title = "Registration";
     }, []);
     return (
-        <div className="bg-[#02413c]">
+        <div className="bg">
            <div className="hero min-h-screen">
                 <div className="hero-content flex flex-col gap-5 w-full">
                     <div className="text-center lg:text-center">

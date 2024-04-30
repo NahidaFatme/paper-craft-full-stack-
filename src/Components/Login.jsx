@@ -7,6 +7,7 @@ import { Link, useLocation, useNavigate} from "react-router-dom";
 import 'animate.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import '../index.css';
 
 const Login = () => {
     const { loginUser, loginGoogle, loading, loginGithub } = useContext(AuthContext);
@@ -69,7 +70,7 @@ const Login = () => {
     }, []);
 
     return (
-        <div className="bg-[#02413c]">
+        <div className="bg">
            <div className="hero min-h-screen">
                 <div className="hero-content flex-col gap-5 w-full">
                     <div className="text-center lg:text-center">

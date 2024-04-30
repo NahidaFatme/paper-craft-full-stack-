@@ -9,13 +9,14 @@ import { FaRegEdit } from "react-icons/fa";
 import { TbCategory } from "react-icons/tb";
 import { TbCurrencyTaka } from "react-icons/tb";
 import { TbListDetails } from "react-icons/tb";
+import '../index.css';
 const SelectedCategory = () => {
     useEffect(() => {
         document.title = "Selected Category Section";
     }, []);
     const loadedItems = useLoaderData();
     return (
-        <div className="bg-[#02413c] h-svh pt-12">
+        <div className="bg h-svh pt-12">
             <div className="text-center mb-10">
                 <h1 className="mx-auto pacifico text-[#fcbb02] text-3xl font-bold animate__animated animate__backInRight">
                  Showing Items of Selected Category</h1>

@@ -4,6 +4,7 @@ import { IoMdPricetags } from "react-icons/io";
 import { FaStar } from "react-icons/fa";
 import { MdOutlineDashboardCustomize } from "react-icons/md";
 import { FaRegClock } from "react-icons/fa";
+import '../index.css';
 const Details = () => {
 
     const loadedItem = useLoaderData();
@@ -12,7 +13,7 @@ const Details = () => {
         document.title = "Home";
     }, []);
     return (
-        <div className="mx-auto bg-[#02413c] py-6 md:py-16 min-h-screen">
+        <div className="mx-auto bg py-6 md:py-16 min-h-screen">
             <div className="mx-auto w-4/5">
                 <div className="rounded-3xl bg-[#fff8e3] ">
                     <div className="w-full h-svh rounded-t-3xl">

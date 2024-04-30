@@ -7,7 +7,7 @@ import Lottie from "lottie-react";
 import Grass from '../assets/Grass.json';
 const Footer = () => {
     return (
-        <div>
+        <div className="bg">
             <div className="mt-16 md:mt-24 lg:mt-0">
                     <Lottie animationData={Grass} />
             </div>

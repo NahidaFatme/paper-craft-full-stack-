@@ -3,6 +3,7 @@ import { AuthContext } from "./AuthProvider";
 import { useEffect } from "react";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import '../index.css';
 const AddItem = () => {
 
     const { user, loading } = useContext(AuthContext);
@@ -52,7 +53,7 @@ const AddItem = () => {
     }
 
     return (
-        <div className="mx-auto bg-[#02413c] py-6 md:py-16">
+        <div className="mx-auto bg py-6 md:py-16">
             <div className="text-center mb-10">
                 <h1 className="mx-auto pacifico text-[#fcbb02] text-4xl font-bold animate__animated animate__backInRight">Add New Craft Item</h1>
             </div>
