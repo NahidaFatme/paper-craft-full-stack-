@@ -17,6 +17,7 @@ import Slide from "./Slide";
 import p1 from '../images/p1.jpg';
 import p2 from '../images/p2.jpg';
 import p3 from '../images/p3.jpg';
+
 const Banner = () => {
     const [subs, setSubs] = useState([]);
     const [loadedItems, setLoadedItems] = useState([]);
@@ -42,7 +43,7 @@ const Banner = () => {
                 console.error('Error fetching data:', error);
             });
     }, []);
-    
+
     return (
         <div>
             <Slide></Slide>
